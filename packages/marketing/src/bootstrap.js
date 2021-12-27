@@ -18,7 +18,6 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
   return {
     onParentNavigate({ pathname: nextPathname }) {
       const { pathname } = history.location;
-      console.log('marketing...')
       if (pathname !== nextPathname) {
         history.push(nextPathname);
       }
